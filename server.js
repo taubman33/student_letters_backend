@@ -12,6 +12,6 @@ app.listen(PORT, () => {console.log(`express server running on port ${PORT}`)})
 
 app.get('/', (req,res) => { res.send('this is our landing page')})
 
-app.get('/letters', letterController.getLetters)
+app.get('/api/letters', letterController.getLetters)
 
 
