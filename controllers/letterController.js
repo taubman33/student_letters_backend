@@ -1,5 +1,5 @@
 const { Letter } = require('../models')
-const letterSchema = require('../models/letter')
+const letterSchema = require('../models/letters')
 
 const getLetters = async (req, res)=> {
     //without our Find
