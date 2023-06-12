@@ -8,4 +8,6 @@ const getLetters = async (req, res)=> {
     res.json(letters)
 }
 
-module.exports = getLetters
+module.exports = {
+    getLetters
+} 
