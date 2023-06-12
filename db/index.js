@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 
+
+const pw = "ejIvUpgOimJyQsCz"
 mongoose
-  .connect('mongodb+srv://taubman33:mH2jpzRdkOU22m2m@cluster0.dhpgmeb.mongodb.net/')
+  .connect(`mongodb+srv://taubman33:${pw}@cluster0.dhpgmeb.mongodb.net/lettersDatabase?retryWrites=true&w=majority`)
   .then(() => {
     console.log('Successfully connected to MongoDB.')
   })
